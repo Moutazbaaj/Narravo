@@ -9,13 +9,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom, rgba(0, 123, 255, 0.3), rgba(128, 0, 128, 0.3)); /* Blue to Purple Gradient */
             margin: 0;
             padding: 0;
             color: #333;
         }
         header {
-            background-color: #007BFF;
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
             color: white;
             padding: 20px;
             text-align: center;
@@ -25,18 +25,19 @@
             margin: 20px;
             background-color: white;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h2 {
-            color: #007BFF;
+            color: #800080; /* Purple */
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #007BFF;
+            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
             color: white;
         }
         a {
-            color: #007BFF;
+            color: #800080; /* Purple for links */
             text-decoration: none;
         }
         a:hover {
@@ -56,16 +57,49 @@
         <ul>
             <li><strong>How do I use Text to Speech?</strong><br>Simply enter the text and press the "Read Text" button to convert it into speech.</li>
             <li><strong>How do I scan a document?</strong><br>Use your device's camera to scan documents and extract text using OCR.</li>
-            <li><strong>Where can I find the privacy policy?</strong><br>Your privacy policy is available <a href="YOUR_PRIVACY_POLICY_URL" target="_blank">here</a>.</li>
+            <li><strong>Where can I find the privacy policy?</strong><br>Your privacy policy is available <a href="https://moutazbaaj.github.io/Narravo/" target="_blank">here</a>.</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Features of the Narravo App</h2>
+        <ul>
+            <li><strong>Text to Speech:</strong> Convert any text into spoken words. You can type the text manually or scan it from a document, image, or PDF.</li>
+            <li><strong>Text from Image:</strong> Capture or upload a photo, and the app will extract the text from the image using Optical Character Recognition (OCR).</li>
+            <li><strong>Text from Camera:</strong> Use your device's camera to scan and extract text from documents in real time.</li>
+            <li><strong>Text from PDF:</strong> Upload or scan PDF documents, and the app will extract and read the text for you.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Account Deletion</h2>
+        <p>If you want to delete your account and all associated data (such as your email, collections, saved texts, etc.), follow these steps:</p>
+        <ul>
+            <li>Open the app on your device.</li>
+            <li>Go to your account settings.</li>
+            <li>Tap on "Delete Account" to initiate the account deletion process.</li>
+            <li>Confirm the action when prompted, and all your data, including saved texts, collections, and your email, will be permanently deleted.</li>
+        </ul>
+        <p>By deleting your account, all your saved data linked to your account will be removed from our systems. Please make sure you have backed up any important data before deleting your account.</p>
+    </section>
+
+    <section>
+        <h2>Data Privacy</h2>
+        <p>We take your privacy seriously. The data you provide, including your email address and any texts or collections you save in the app, are stored securely in <strong>Google Firebase Firestore</strong>. This allows you to access your data from any device by logging into the same account.</p>
+        <p>The following data is stored in Firestore:</p>
+        <ul>
+            <li>Your <strong>email address</strong> for account management.</li>
+            <li>The <strong>texts</strong> you enter manually or extract from images, documents, and PDFs.</li>
+            <li>Your <strong>collections</strong> of saved texts.</li>
+        </ul>
+        <p>This data is used solely to provide you with the ability to access your information from any device while ensuring security and privacy. If you choose to delete your account, all your data will be permanently erased from Firestore.</p>
     </section>
 
     <section>
         <h2>Contact Support</h2>
         <p>If you need further assistance, please reach out to us:</p>
         <ul>
-            <li>Email: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></li>
-            <li>Phone: +1 (234) 567-890</li>
+            <li>Email: <a href="mailto:support@moutazbaaj.com">support@moutazbaaj.com</a></li>
         </ul>
     </section>
 
