@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Moutaz baaj">
+    <meta name="author" content="Moutaz Baaj">
     <meta name="description" content="Support page for Narravo App">
     <title>Narravo App Support</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, rgba(0, 123, 255, 0.3), rgba(128, 0, 128, 0.3)); /* Blue to Purple Gradient */
+            background: linear-gradient(to bottom, rgba(0, 123, 255, 0.3), rgba(128, 0, 128, 0.3));
             margin: 0;
             padding: 0;
             color: #800080;
         }
         header {
-            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+            background-color: rgba(0, 123, 255, 0.8);
             color: white;
             padding: 20px;
             text-align: center;
@@ -28,16 +28,16 @@
             border-radius: 8px;
         }
         h2 {
-            color: #800080; /* Purple */
+            color: #800080;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+            background-color: rgba(0, 123, 255, 0.8);
             color: white;
         }
         a {
-            color: #800080; /* Purple for links */
+            color: #800080;
             text-decoration: none;
         }
         a:hover {
@@ -46,53 +46,57 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>Narravo App Support</h1>
         <p>Your go-to page for troubleshooting and help</p>
     </header>
 
     <section>
-        <h2>Frequently Asked Questions (FAQ)</h2>
+        <h2>Overview</h2>
+        <p>Narravo is a powerful mobile application designed to convert text into speech, extract text from images, and scan physical documents for text recognition. The app enhances accessibility, especially for individuals with reading or speaking difficulties, by providing an intuitive way to interact with text-based content.</p>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <h3>1. User Authentication</h3>
         <ul>
-            <li><strong>How do I use Text to Speech?</strong><br>Simply enter the text and press the "Read Text" button to convert it into speech.</li>
-            <li><strong>How do I scan a document?</strong><br>Use your device's camera to scan documents and extract text using OCR.</li>
-            <li><strong>Where can I find the privacy policy?</strong><br>Your privacy policy is available <a href="https://moutazbaaj.github.io/Narravo/" target="_blank">here</a>.</li>
+            <li><strong>Login:</strong> Users can sign in using their registered email and password.</li>
+            <li><strong>Forgot Password:</strong> Users can reset their password by entering their email and receiving a reset link.</li>
+            <li><strong>Sign Up:</strong> Users can create a new account with a valid email and a strong password (minimum 8 characters, including uppercase and lowercase letters and numbers).</li>
+            <li><strong>Profile Creation:</strong> After signing up, users can select a profile picture, nickname, birthdate, and a color tag for customization.</li>
+            <li><strong>Profile Editing:</strong> Users can modify their profile details through the settings menu.</li>
+        </ul>
+
+        <h3>2. Navigation & User Interface</h3>
+        <ul>
+            <li><strong>Hamburger Menu:</strong> Provides quick access to user profile, settings, language selection, voice preferences, logout, and account deletion options.</li>
+        </ul>
+
+        <h3>3. Main Tabs</h3>
+        <ul>
+            <li><strong>Home Tab:</strong> Displays shortcuts to key features like Text-to-Speech, Text from Photo, and PDF to Speech. Users can customize their view to show favorite collections.</li>
+            <li><strong>Collections Tab:</strong> Allows users to create and manage text collections, add text manually or through extraction, and read text in individual or batch mode.</li>
+            <li><strong>History Tab:</strong> Stores text interactions, including text-to-speech history, extracted text from photos, and PDF extractions. Users can delete history entries manually.</li>
         </ul>
     </section>
 
     <section>
-        <h2>Features of the Narravo App</h2>
+        <h2>Technologies Used</h2>
         <ul>
-            <li><strong>Text to Speech:</strong> Convert any text into spoken words. You can type the text manually or scan it from a document, image, or PDF.</li>
-            <li><strong>Text from Image:</strong> Capture or upload a photo, and the app will extract the text from the image using Optical Character Recognition (OCR).</li>
-            <li><strong>Text from Camera:</strong> Use your device's camera to scan and extract text from documents in real time.</li>
-            <li><strong>Text from PDF:</strong> Upload or scan PDF documents, and the app will extract and read the text for you.</li>
+            <li><strong>Frontend:</strong> SwiftUI (native iOS frameworks)</li>
+            <li><strong>Text-to-Speech:</strong> AVSpeechSynthesizer (iOS-native API)</li>
+            <li><strong>OCR:</strong> Vision Framework (iOS-native OCR technology)</li>
+            <li><strong>Document Scanning:</strong> VisionKit (iOS-native document scanner)</li>
+            <li><strong>Backend:</strong> CoreData and Firebase (for local and cloud storage of user data)</li>
         </ul>
     </section>
 
     <section>
-        <h2>Account Deletion</h2>
-        <p>If you want to delete your account and all associated data (such as your email, collections, saved texts, etc.), follow these steps:</p>
+        <h2>Account & Data Management</h2>
         <ul>
-            <li>Open the app on your device.</li>
-            <li>Go to your account settings.</li>
-            <li>Tap on "Delete Account" to initiate the account deletion process.</li>
-            <li>Confirm the action when prompted, and all your data, including saved texts, collections, and your email, will be permanently deleted.</li>
+            <li><strong>Logout:</strong> Users can log out at any time through the menu.</li>
+            <li><strong>Delete Account:</strong> Users can permanently delete their account and associated data, including profile information, saved collections, and history logs.</li>
         </ul>
-        <p>By deleting your account, all your saved data linked to your account will be removed from our systems. Please make sure you have backed up any important data before deleting your account.</p>
-    </section>
-
-    <section>
-        <h2>Data Privacy</h2>
-        <p>We take your privacy seriously. The data you provide, including your email address and any texts or collections you save in the app, are stored securely in <strong>Google Firebase Firestore</strong>. This allows you to access your data from any device by logging into the same account.</p>
-        <p>The following data is stored in Firestore:</p>
-        <ul>
-            <li>Your <strong>email address</strong> for account management.</li>
-            <li>The <strong>texts</strong> you enter manually or extract from images, documents, and PDFs.</li>
-            <li>Your <strong>collections</strong> of saved texts.</li>
-        </ul>
-        <p>This data is used solely to provide you with the ability to access your information from any device while ensuring security and privacy. If you choose to delete your account, all your data will be permanently erased from Firestore.</p>
     </section>
 
     <section>
@@ -106,6 +110,5 @@
     <footer>
         <p>&copy; 2025 Narravo App. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
